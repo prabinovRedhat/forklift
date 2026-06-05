@@ -2,7 +2,7 @@
 # For release from Tekton staged builds: use STREAM=upstream and pass staged image
 # refs via build-args (e.g. CONTROLLER_IMAGE=quay.io/.../forklift-controller-2-10:revision).
 # Use build-args-file=build/release.conf for MTV_VERSION, CHANNEL, DEFAULT_CHANNEL, RELEASE.
-FROM quay.io/konflux-ci/operator-sdk-builder@sha256:1e4677720ef0c0563d67bcfe1cbac6ac87970b8cb1cdc58bf25b168deeabfecf as builder
+FROM quay.io/konflux-ci/operator-sdk-builder@sha256:63ba97168ab13d09198fbb9d392a4aaf8826d64d73b9d8df6766d0924db50114 as builder
 
 ARG STREAM=downstream
 ARG VERSION="2.7.0"
